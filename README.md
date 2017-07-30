@@ -1,21 +1,40 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/PoslinskiNet/ember-introjs/master/ember-pell.png" alt="Ember Pell Logo" width="100%">
+</p>
+
+[![Build Status](https://api.travis-ci.org/PoslinskiNet/ember-pell.svg?branch=master)](http://travis-ci.org/PoslinskiNet/ember-pell)
+
 # ember-pell
 
 An Ember Component for pell micro 1KB WYSIWYG editor that doesn't require jQuery.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-pell`
-* `npm install`
+`ember install ember-pell`
 
-## Running
+## Usage
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+### 1. Setup value property:
+You can declare value variable in your controller or parent component:
+
+```javascript
+// app/controllers/task.js
+import Ember from 'ember';
+
+export default Ember.Controller.extend({
+  task: '<h1>Some html</h1>'
+});
+```
+#### 2. Use `pell-editor` component
+
+```hbs
+{{pell-editor value=value onChange=(action (mut value)) pellOptions=options}}
+```
+
+Options are documented in the code as well as in [Pell repository](https://github.com/jaredreich/pell)
 
 ## Running Tests
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
@@ -23,4 +42,18 @@ An Ember Component for pell micro 1KB WYSIWYG editor that doesn't require jQuery
 
 * `ember build`
 
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+
+## LICENSE
+
+See the LICENSE file included in this repository.
+
+<!-- Links -->
+[pell]: https://github.com/jaredreich/pell
+
+
+## Code of Conduct
+Please note that this project is released with a Contributor Code of
+Conduct. By participating in this project you agree to abide by its
+terms, which can be found in the `CODE_OF_CONDUCT.md` file in this
+repository.
