@@ -19,14 +19,11 @@ export default Component.extend({
   didInsertElement() {
     this._super(...arguments);
 
-    if (!this.get('pell')) {
+    let pellInstance = pell.init(this._options());
 
-      let pellInstance = pell.init(this._options());
+    this.set('pell', pellInstance);
 
-      this.set('pell', pellInstance);
-
-      this.get('innerHTML');
-    }
+    this.get('innerHTML');
   },
 
   _options() {

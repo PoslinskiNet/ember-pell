@@ -14,7 +14,7 @@ describe('Integration | Component | pell editor', function() {
     this.value = "This is <strong>my</strong> html";
     this.subject({
       value: this.value,
-      onChange: function(html) {
+      onChange(html) {
         this.value = html;
       },
     });
@@ -26,8 +26,13 @@ describe('Integration | Component | pell editor', function() {
     expect($('.pell-content').attr("contenteditable")).to.equal('true');
   });
 
-  it('change value callback is propagates properly', function(){
+  it('change value callback propagates properly', function(){
     this.value = "new value";
     expect($('.pell-content').html()).to.equal("new value");
+  });
+
+  it('changing value from inside editor mutates value outside', function(){
+    $('.pell-content').html("Some new things");
+    expect(this.value).to.equal("Some new things");
   });
 });
