@@ -4,9 +4,13 @@
 
 [![Build Status](https://api.travis-ci.org/PoslinskiNet/ember-pell.svg?branch=master)](http://travis-ci.org/PoslinskiNet/ember-pell)
 
-# ember-pell
+# Ember-pell
 
 An Ember Component for pell micro 1KB WYSIWYG editor that doesn't require jQuery.
+
+# Demo
+
+https://jaredreich.com/pell
 
 ## Installation
 
