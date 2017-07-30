@@ -1,19 +1,17 @@
 import Ember from 'ember';
 import pell from 'ember-pell/pell';
 
-const { Component, computed } = Ember;
+const { Component, observer } = Ember;
 
 export default Component.extend({
   pellOptions: {},
 
   onChange(/*html*/) {},
 
-  innerHTML: computed('value', function() {
+  valueObserver: observer('value', function() {
     if (this.get('pell')) {
-      this.get('pell').content.innerHTML = this.get('value');
+      this._setValue();
     }
-
-    return this.get('value');
   }),
 
   didInsertElement() {
@@ -23,7 +21,7 @@ export default Component.extend({
 
     this.set('pell', pellInstance);
 
-    this.get('innerHTML');
+    this._setValue();
   },
 
   _options() {
@@ -32,4 +30,10 @@ export default Component.extend({
       onChange: this.onChange
     });
   },
+
+  _setValue() {
+    if (this.get('pell').content.innerHTML !== this.get('value')) {
+      this.get('pell').content.innerHTML = this.get('value');
+    }
+  }
 });
