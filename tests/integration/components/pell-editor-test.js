@@ -12,7 +12,7 @@ describe('Integration | Component | pell editor', function() {
 
   beforeEach(function(){
     this.value = "This is <strong>my</strong> html";
-    this.subject({
+    this.component = this.subject({
       value: this.value,
       onChange(html) {
         this.value = html;
@@ -27,12 +27,12 @@ describe('Integration | Component | pell editor', function() {
   });
 
   it('change value callback propagates properly', function(){
-    this.value = "new value";
+    Ember.run(this.component, 'set', 'value', "new value");
     expect($('.pell-content').html()).to.equal("new value");
   });
 
   it('changing value from inside editor mutates value outside', function(){
-    $('.pell-content').html("Some new things");
-    expect(this.value).to.equal("Some new things");
+    $('.pell-content').html("Taadaa!");
+    expect(this.value).to.equal("Taadaa!");
   });
 });
