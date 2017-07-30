@@ -10,7 +10,7 @@ An Ember Component for pell micro 1KB WYSIWYG editor that doesn't require jQuery
 
 # Demo
 
-https://jaredreich.com/pell
+https://ember-twiddle.com/3b21c63730594b39d2b9cbfa8f963803
 
 ## Installation
 
