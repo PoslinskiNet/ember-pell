@@ -2,37 +2,33 @@ import Ember from 'ember';
 import { expect } from 'chai';
 import { describe, it, beforeEach } from 'mocha';
 import { setupComponentTest } from 'ember-mocha';
+import hbs from 'htmlbars-inline-precompile';
 
 const { $ } = Ember;
 
 describe('Integration | Component | pell editor', function() {
   setupComponentTest('pell-editor', {
-    integration: false
+    integration: true
   });
 
   beforeEach(function(){
-    this.value = "This is <strong>my</strong> html";
-    this.component = this.subject({
-      value: this.value,
-      onChange(html) {
-        this.value = html;
-      },
-    });
-    this.render();
+    this.set('value', "This is <strong>my</strong> html");
+    this.render(hbs`{{pell-editor value=value onChange=(action (mut value))}}`);
   });
 
-  it('render pell rich text editor content wrapper', function(){
+  it('render pell richt text editor', function(){
     expect($('.pell-content').html()).to.equal("This is <strong>my</strong> html");
     expect($('.pell-content').attr("contenteditable")).to.equal('true');
   });
 
   it('change value callback propagates properly', function(){
-    Ember.run(this.component, 'set', 'value', "new value");
+    this.set('value', "new value");
     expect($('.pell-content').html()).to.equal("new value");
   });
 
-  it('changing value from inside editor mutates value outside', function(){
-    $('.pell-content').html("Taadaa!");
-    expect(this.value).to.equal("Taadaa!");
+  it('mutates state outside if value changed in editor', function(){
+    $('.pell-content').html('Taadaa!');
+    $('.pell-content').trigger('input');
+    expect(this.get('value')).to.equal('Taadaa!');
   });
 });
