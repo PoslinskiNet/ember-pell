@@ -33,7 +33,7 @@ export default Ember.Controller.extend({
 #### 2. Use `pell-editor` component
 
 ```hbs
-{{pell-editor value=value onChange=(action (mut value)) pellOptions=options}}
+{{pell-editor value=task onChange=(action (mut value)) pellOptions=options}}
 ```
 
 Available options are documented in [Pell repository](https://github.com/jaredreich/pell)
