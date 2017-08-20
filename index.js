@@ -11,10 +11,12 @@ module.exports = {
   included: function(app) {
     this._super.included(app);
 
-    app.import('vendor/ember-pell/pell.min.js');
     app.import('vendor/ember-pell/pell.css');
-
-    app.import('vendor/ember-pell/shims/pell.js');
+    app.import('vendor/ember-pell/pell.min.js', {
+      using: [
+        { transformation: 'amd', as: 'pell' }
+      ]
+    });
   },
 
   pellPath() {
