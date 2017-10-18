@@ -3,10 +3,9 @@
 </p>
 
 [![Build Status](https://api.travis-ci.org/PoslinskiNet/ember-pell.svg?branch=master)](http://travis-ci.org/PoslinskiNet/ember-pell)
+[![Greenkeeper badge](https://badges.greenkeeper.io/PoslinskiNet/ember-pell.svg)](https://greenkeeper.io/)
 
 # Ember-pell
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/PoslinskiNet/ember-pell.svg)](https://greenkeeper.io/)
 
 An Ember Component for pell micro 1KB WYSIWYG editor that doesn't require jQuery.
 
