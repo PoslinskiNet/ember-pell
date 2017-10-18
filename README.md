@@ -6,6 +6,8 @@
 
 # Ember-pell
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/PoslinskiNet/ember-pell.svg)](https://greenkeeper.io/)
+
 An Ember Component for pell micro 1KB WYSIWYG editor that doesn't require jQuery.
 
 # Demo
