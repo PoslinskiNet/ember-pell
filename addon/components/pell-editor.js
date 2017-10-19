@@ -1,7 +1,6 @@
-import Ember from 'ember';
+import Component from '@ember/component';
+import { observer } from '@ember/object';
 import pell from 'ember-pell/pell';
-
-const { Component, observer } = Ember;
 
 export default Component.extend({
   pellOptions: {},

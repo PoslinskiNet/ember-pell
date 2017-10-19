@@ -1,10 +1,8 @@
-import Ember from 'ember';
+import $ from 'jquery';
 import { expect } from 'chai';
 import { describe, it, beforeEach } from 'mocha';
 import { setupComponentTest } from 'ember-mocha';
 import hbs from 'htmlbars-inline-precompile';
-
-const { $ } = Ember;
 
 describe('Integration | Component | pell editor', function() {
   setupComponentTest('pell-editor', {
