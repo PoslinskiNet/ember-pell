@@ -1,5 +1,23 @@
 # Change Log
 
+## [Unreleased](https://github.com/PoslinskiNet/ember-pell/tree/HEAD)
+
+[Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.0...HEAD)
+
+**Implemented enhancements:**
+
+- Feature 2.16 [\#5](https://github.com/PoslinskiNet/ember-pell/pull/5) ([PoslinskiNet](https://github.com/PoslinskiNet))
+
+**Closed issues:**
+
+- Italic text in twiddle demo uses invalid tag [\#1](https://github.com/PoslinskiNet/ember-pell/issues/1)
+
+**Merged pull requests:**
+
+- Update dependencies to enable Greenkeeper 🌴 [\#4](https://github.com/PoslinskiNet/ember-pell/pull/4) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Use AMD transformation when importing [\#3](https://github.com/PoslinskiNet/ember-pell/pull/3) ([PoslinskiNet](https://github.com/PoslinskiNet))
+- Fix README [\#2](https://github.com/PoslinskiNet/ember-pell/pull/2) ([ynnoj](https://github.com/ynnoj))
+
 ## [v1.0](https://github.com/PoslinskiNet/ember-pell/tree/v1.0) (2017-07-30)
 
 

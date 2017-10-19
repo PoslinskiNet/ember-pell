@@ -4,6 +4,7 @@
 
 [![Build Status](https://api.travis-ci.org/PoslinskiNet/ember-pell.svg?branch=master)](http://travis-ci.org/PoslinskiNet/ember-pell)
 [![Greenkeeper badge](https://badges.greenkeeper.io/PoslinskiNet/ember-pell.svg)](https://greenkeeper.io/)
+[![Ember Observer Score](https://emberobserver.com/badges/ember-pell.svg)](https://emberobserver.com/addons/ember-pell)
 
 # Ember-pell
 
