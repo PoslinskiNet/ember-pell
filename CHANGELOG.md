@@ -1,8 +1,7 @@
 # Change Log
 
-## [Unreleased](https://github.com/PoslinskiNet/ember-pell/tree/HEAD)
-
-[Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.0...HEAD)
+## [v1.1.0](https://github.com/PoslinskiNet/ember-pell/tree/v1.1.0) (2017-10-19)
+[Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.0...v1.1.0)
 
 **Implemented enhancements:**
 
