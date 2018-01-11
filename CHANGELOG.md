@@ -1,11 +1,26 @@
 # Change Log
 
+## [v1.2.0](https://github.com/PoslinskiNet/ember-pell/tree/v1.2.0) (2018-01-11)
+[Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.1.0...v1.2.0)
+
+**Implemented enhancements:**
+
+- Feature 2.18 support [\#12](https://github.com/PoslinskiNet/ember-pell/pull/12) ([PoslinskiNet](https://github.com/PoslinskiNet))
+
+**Merged pull requests:**
+
+- Update ember-source to the latest version 🚀 [\#10](https://github.com/PoslinskiNet/ember-pell/pull/10) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update ember-cli to the latest version 🚀 [\#8](https://github.com/PoslinskiNet/ember-pell/pull/8) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update ember-source to the latest version 🚀 [\#7](https://github.com/PoslinskiNet/ember-pell/pull/7) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+
 ## [v1.1.0](https://github.com/PoslinskiNet/ember-pell/tree/v1.1.0) (2017-10-19)
 [Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.0...v1.1.0)
 
 **Implemented enhancements:**
 
 - Feature 2.16 [\#5](https://github.com/PoslinskiNet/ember-pell/pull/5) ([PoslinskiNet](https://github.com/PoslinskiNet))
+- Use AMD transformation when importing [\#3](https://github.com/PoslinskiNet/ember-pell/pull/3) ([PoslinskiNet](https://github.com/PoslinskiNet))
+- Fix README [\#2](https://github.com/PoslinskiNet/ember-pell/pull/2) ([ynnoj](https://github.com/ynnoj))
 
 **Closed issues:**
 
@@ -14,8 +29,6 @@
 **Merged pull requests:**
 
 - Update dependencies to enable Greenkeeper 🌴 [\#4](https://github.com/PoslinskiNet/ember-pell/pull/4) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
-- Use AMD transformation when importing [\#3](https://github.com/PoslinskiNet/ember-pell/pull/3) ([PoslinskiNet](https://github.com/PoslinskiNet))
-- Fix README [\#2](https://github.com/PoslinskiNet/ember-pell/pull/2) ([ynnoj](https://github.com/ynnoj))
 
 ## [v1.0](https://github.com/PoslinskiNet/ember-pell/tree/v1.0) (2017-07-30)
 
