@@ -1,6 +1,7 @@
 'use strict';
 
 const path = require('path');
+const resolve = require('resolve');
 const Funnel = require('broccoli-funnel');
 const mergeTrees = require('broccoli-merge-trees');
 
@@ -19,7 +20,7 @@ module.exports = {
   },
 
   pellPath() {
-    return path.join(this.app.project.nodeModulesPath, '/pell/dist');
+    return path.dirname(resolve.sync('pell/package.json', { basedir: __dirname }))
   },
 
   treeForVendor(tree) {
@@ -27,6 +28,7 @@ module.exports = {
 
     trees.push(new Funnel(this.pellPath(), {
       destDir: 'ember-pell',
+      srcDir: '/dist',
       files: ['pell.min.js', 'pell.min.css']
     }));
 
