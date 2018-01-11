@@ -1,5 +1,17 @@
 # Change Log
 
+## [v1.2.1](https://github.com/PoslinskiNet/ember-pell/tree/v1.2.1) (2018-01-11)
+[Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.2.0...v1.2.1)
+
+**Fixed bugs:**
+
+- BroccoliMergeTrees: Expected Broccoli node, got undefined for inputNodes\[0\] [\#6](https://github.com/PoslinskiNet/ember-pell/issues/6)
+- Fixes \#6 [\#13](https://github.com/PoslinskiNet/ember-pell/pull/13) ([PoslinskiNet](https://github.com/PoslinskiNet))
+
+**Closed issues:**
+
+- An in-range update of ember-cli-eslint is breaking the build 🚨 [\#9](https://github.com/PoslinskiNet/ember-pell/issues/9)
+
 ## [v1.2.0](https://github.com/PoslinskiNet/ember-pell/tree/v1.2.0) (2018-01-11)
 [Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.1.0...v1.2.0)
 
