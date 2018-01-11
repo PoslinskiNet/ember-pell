@@ -5,8 +5,12 @@ node_js:
   # so that your addon works for all apps
   - "4"
 
-sudo: false
+sudo: required
 dist: trusty
+
+before_script:
+  - sudo chown root /opt/google/chrome/chrome-sandbox
+  - sudo chmod 4755 /opt/google/chrome/chrome-sandbox
 
 addons:
   chrome: stable
