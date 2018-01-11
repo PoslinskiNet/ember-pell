@@ -20,15 +20,18 @@ module.exports = {
   },
 
   pellPath() {
-    return path.dirname(resolve.sync('pell/package.json', { basedir: __dirname }))
+    return path.dirname(resolve.sync('pell', { basedir: __dirname }))
   },
 
   treeForVendor(tree) {
-    let trees = [tree];
+    let trees = [];
+
+    if (tree) {
+      trees.push(tree);
+    }
 
     trees.push(new Funnel(this.pellPath(), {
       destDir: 'ember-pell',
-      srcDir: '/dist',
       files: ['pell.min.js', 'pell.min.css']
     }));
 
