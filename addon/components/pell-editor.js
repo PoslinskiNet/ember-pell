@@ -3,7 +3,7 @@ import { observer } from '@ember/object';
 import pell from 'ember-pell/pell';
 
 export default Component.extend({
-  pellOptions: {},
+  pellOptions: null,
 
   onChange(/*html*/) {},
 
