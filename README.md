@@ -12,6 +12,12 @@
 
 An Ember Component for pell micro 1KB WYSIWYG editor that doesn't require jQuery.
 
+# Browser support
+
+![Chrome](https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png) | ![Firefox](https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png) | ![IE](https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png) | ![Opera](https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png) | ![Safari](https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png)
+--- | --- | --- | --- | --- |
+5+ ✔ | 4+ ✔ | 9+ ✔ | 11.6+ ✔ | 5+ ✔ |
+
 # Demo
 
 https://ember-twiddle.com/3b21c63730594b39d2b9cbfa8f963803
