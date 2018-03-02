@@ -1,5 +1,18 @@
 # Change Log
 
+## [v1.2.2](https://github.com/PoslinskiNet/ember-pell/tree/v1.2.2) (2018-03-02)
+[Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.2.1...v1.2.2)
+
+**Implemented enhancements:**
+
+- Ember 3.0 upgrade [\#21](https://github.com/PoslinskiNet/ember-pell/pull/21) ([PoslinskiNet](https://github.com/PoslinskiNet))
+- Fix travis Chrome [\#14](https://github.com/PoslinskiNet/ember-pell/pull/14) ([PoslinskiNet](https://github.com/PoslinskiNet))
+
+**Merged pull requests:**
+
+- Update eslint-plugin-node to the latest version 🚀 [\#18](https://github.com/PoslinskiNet/ember-pell/pull/18) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update ember-cli-mocha to the latest version 🚀 [\#17](https://github.com/PoslinskiNet/ember-pell/pull/17) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+
 ## [v1.2.1](https://github.com/PoslinskiNet/ember-pell/tree/v1.2.1) (2018-01-11)
 [Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.2.0...v1.2.1)
 
