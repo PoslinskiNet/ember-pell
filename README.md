@@ -48,14 +48,21 @@ export default Ember.Controller.extend({
 
 Available options are documented in [Pell repository](https://github.com/jaredreich/pell)
 
-## Running Tests
+### Linting
 
+* `npm run lint:js`
+* `npm run lint:js -- --fix`
+
+### Running tests
+
+* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
-## Building
+### Running the dummy application
 
-* `ember build`
+* `ember serve`
+* Visit the dummy application at [http://localhost:4200](http://localhost:4200).
 
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
 
