@@ -1,5 +1,13 @@
 # Change Log
 
+## [v1.3.0](https://github.com/PoslinskiNet/ember-pell/tree/v1.3.0) (2018-03-14)
+[Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.2.2...v1.3.0)
+
+**Merged pull requests:**
+
+- Stable pell [\#24](https://github.com/PoslinskiNet/ember-pell/pull/24) ([PoslinskiNet](https://github.com/PoslinskiNet))
+- Update pell to the latest version 🚀 [\#22](https://github.com/PoslinskiNet/ember-pell/pull/22) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+
 ## [v1.2.2](https://github.com/PoslinskiNet/ember-pell/tree/v1.2.2) (2018-03-02)
 [Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.2.1...v1.2.2)
 
