@@ -18,7 +18,7 @@ export default Component.extend({
 
     let pellInstance = pell.init(this._options());
 
-    this.set('pell', pellInstance);
+    this.set('pell', pellInstance.querySelector(".pell-content"));
 
     this._setValue();
   },
@@ -31,8 +31,8 @@ export default Component.extend({
   },
 
   _setValue() {
-    if (this.get('pell').content.innerHTML !== this.get('value')) {
-      this.get('pell').content.innerHTML = this.get('value');
+    if (this.get('pell').innerHTML !== this.get('value')) {
+      this.get('pell').innerHTML = this.get('value');
     }
   }
 });
