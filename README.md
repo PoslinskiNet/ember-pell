@@ -10,7 +10,7 @@
 
 # Ember-pell
 
-An Ember Component for pell micro 1KB WYSIWYG editor that doesn't require jQuery.
+An Ember Component that uses under the hood the great Pell micro 1KB WYSIWYG editor (https://github.com/jaredreich/pell) that doesn't require jQuery.
 
 # Browser support
 
