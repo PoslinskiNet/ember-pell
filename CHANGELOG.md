@@ -1,5 +1,21 @@
 # Change Log
 
+## [v1.3.2](https://github.com/PoslinskiNet/ember-pell/tree/v1.3.2) (2018-04-15)
+[Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.3.1...v1.3.2)
+
+**Implemented enhancements:**
+
+- Add a reference to the original library in the README [\#25](https://github.com/PoslinskiNet/ember-pell/issues/25)
+- 3.1 upgrade [\#29](https://github.com/PoslinskiNet/ember-pell/pull/29) ([PoslinskiNet](https://github.com/PoslinskiNet))
+
+**Merged pull requests:**
+
+- Update ember-cli to the latest version 🚀 [\#28](https://github.com/PoslinskiNet/ember-pell/pull/28) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update ember-cli-chai to the latest version 🚀 [\#26](https://github.com/PoslinskiNet/ember-pell/pull/26) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+
+## [v1.3.1](https://github.com/PoslinskiNet/ember-pell/tree/v1.3.1) (2018-03-16)
+[Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.3.0...v1.3.1)
+
 ## [v1.3.0](https://github.com/PoslinskiNet/ember-pell/tree/v1.3.0) (2018-03-14)
 [Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.2.2...v1.3.0)
 
