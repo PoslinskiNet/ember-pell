@@ -1,6 +1,6 @@
 {
   "name": "ember-pell",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "An Ember Component for pell micro WYSIWYG editor",
   "keywords": [
     "ember-addon",
