@@ -1,5 +1,21 @@
 # Change Log
 
+## [v1.3.3](https://github.com/PoslinskiNet/ember-pell/tree/v1.3.3) (2018-06-03)
+[Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.3.2...v1.3.3)
+
+**Implemented enhancements:**
+
+- Fix pods support [\#33](https://github.com/PoslinskiNet/ember-pell/pull/33) ([PoslinskiNet](https://github.com/PoslinskiNet))
+
+**Fixed bugs:**
+
+- pell-editor is not a helper [\#30](https://github.com/PoslinskiNet/ember-pell/issues/30)
+
+**Merged pull requests:**
+
+- Update ember-source to the latest version 🚀 [\#32](https://github.com/PoslinskiNet/ember-pell/pull/32) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update ember-try to the latest version 🚀 [\#31](https://github.com/PoslinskiNet/ember-pell/pull/31) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+
 ## [v1.3.2](https://github.com/PoslinskiNet/ember-pell/tree/v1.3.2) (2018-04-15)
 [Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.3.1...v1.3.2)
 
