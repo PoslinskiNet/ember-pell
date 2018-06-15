@@ -31,8 +31,9 @@ export default Component.extend({
   },
 
   _setValue() {
-    if (this.get('pell').innerHTML !== this.get('value')) {
-      this.get('pell').innerHTML = this.get('value');
+    const val = this.get('value');
+    if (this.get('pell').innerHTML !== val && typeof val !== 'undefined') {
+      this.get('pell').innerHTML = val;
     }
   }
 });
