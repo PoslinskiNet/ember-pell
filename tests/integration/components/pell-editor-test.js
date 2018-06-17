@@ -9,24 +9,49 @@ describe('Integration | Component | pell editor', function() {
     integration: true
   });
 
-  beforeEach(function(){
-    this.set('value', "This is <strong>my</strong> html");
-    this.render(hbs`{{pell-editor value=value onChange=(action (mut value))}}`);
+  describe('when value is provided', function() {
+    beforeEach(function(){
+      this.set('value', "This is <strong>my</strong> html");
+      this.render(hbs`{{pell-editor value=value onChange=(action (mut value))}}`);
+    });
+
+    it('render pell richt text editor', function(){
+      expect($('.pell-content').html()).to.equal("This is <strong>my</strong> html");
+      expect($('.pell-content').attr("contenteditable")).to.equal('true');
+    });
+
+    it('change value callback propagates properly', function(){
+      this.set('value', "new value");
+      expect($('.pell-content').html()).to.equal("new value");
+    });
+
+    it('mutates state outside if value changed in editor', function(){
+      $('.pell-content').html('Taadaa!');
+      $('.pell-content').trigger('input');
+      expect(this.get('value')).to.equal('Taadaa!');
+    });
   });
 
-  it('render pell richt text editor', function(){
-    expect($('.pell-content').html()).to.equal("This is <strong>my</strong> html");
-    expect($('.pell-content').attr("contenteditable")).to.equal('true');
-  });
+  describe('when value is not provided', function() {
+    beforeEach(function(){
+      this.set('value', undefined);
+      this.render(hbs`{{pell-editor value=value onChange=(action (mut value))}}`);
+    });
 
-  it('change value callback propagates properly', function(){
-    this.set('value', "new value");
-    expect($('.pell-content').html()).to.equal("new value");
-  });
+    it('render pell richt text editor', function(){
+      expect($('.pell-content').html()).to.equal("");
+      expect($('.pell-content').attr("contenteditable")).to.equal('true');
+    });
 
-  it('mutates state outside if value changed in editor', function(){
-    $('.pell-content').html('Taadaa!');
-    $('.pell-content').trigger('input');
-    expect(this.get('value')).to.equal('Taadaa!');
+    it('change value callback propagates properly', function(){
+      this.set('value', "new value");
+      expect($('.pell-content').html()).to.equal("new value");
+    });
+
+    it('mutates state outside if value changed in editor', function(){
+      $('.pell-content').html('Taadaa!');
+      $('.pell-content').trigger('input');
+      expect(this.get('value')).to.equal('Taadaa!');
+    });
   });
 });
