@@ -1,15 +1,30 @@
 # Change Log
 
+## [v1.3.4](https://github.com/PoslinskiNet/ember-pell/tree/v1.3.4) (2018-06-17)
+[Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.3.3...v1.3.4)
+
+**Implemented enhancements:**
+
+- Empty value specs [\#36](https://github.com/PoslinskiNet/ember-pell/pull/36) ([PoslinskiNet](https://github.com/PoslinskiNet))
+
+**Fixed bugs:**
+
+- pell-editor is not a helper [\#30](https://github.com/PoslinskiNet/ember-pell/issues/30)
+
+**Closed issues:**
+
+- 'undefined' value [\#34](https://github.com/PoslinskiNet/ember-pell/issues/34)
+
+**Merged pull requests:**
+
+- Don't set the value of the editor if the value is undefined [\#35](https://github.com/PoslinskiNet/ember-pell/pull/35) ([lougreenwood](https://github.com/lougreenwood))
+
 ## [v1.3.3](https://github.com/PoslinskiNet/ember-pell/tree/v1.3.3) (2018-06-03)
 [Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.3.2...v1.3.3)
 
 **Implemented enhancements:**
 
 - Fix pods support [\#33](https://github.com/PoslinskiNet/ember-pell/pull/33) ([PoslinskiNet](https://github.com/PoslinskiNet))
-
-**Fixed bugs:**
-
-- pell-editor is not a helper [\#30](https://github.com/PoslinskiNet/ember-pell/issues/30)
 
 **Merged pull requests:**
 
