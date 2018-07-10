@@ -16,9 +16,12 @@ export default Component.extend({
   didInsertElement() {
     this._super(...arguments);
 
-    let pellInstance = pell.init(this._options());
+    const options = this._options();
+    const pellInstance = pell.init(options);
 
-    this.set('pell', pellInstance.querySelector(".pell-content"));
+    const contentClass = options.classes && options.classes.content || 'pell-content';
+    const contentClassSelector = `.${contentClass.split(' ').join('.')}`;
+    this.set('pell', pellInstance.querySelector(contentClassSelector));
 
     this._setValue();
   },
@@ -26,7 +29,8 @@ export default Component.extend({
   _options() {
     return Object.assign({}, this.get('pellOptions'), {
       element: this.element,
-      onChange: this.onChange
+      onChange: this.onChange,
+
     });
   },
 

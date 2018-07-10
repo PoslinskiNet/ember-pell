@@ -54,4 +54,15 @@ describe('Integration | Component | pell editor', function() {
       expect(this.get('value')).to.equal('Taadaa!');
     });
   });
+
+  it('respects custom content classes', function() {
+    this.set('value', 'Initial value');
+    this.set('pellOptions', {
+      classes: {
+        content: 'custom class',
+      }
+    });
+    this.render(hbs`{{pell-editor pellOptions=pellOptions value=value}}`);
+    expect($('.custom.class').html()).to.equal('Initial value');
+  });
 });
