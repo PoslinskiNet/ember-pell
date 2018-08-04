@@ -36,14 +36,14 @@ You can declare value variable in your controller or parent component:
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  task: '<h1>Some html</h1>',
+  value: '<h1>Some html</h1>',
   options: {} // optional param
 });
 ```
 #### 2. Use `pell-editor` component
 
 ```hbs
-{{pell-editor value=task onChange=(action (mut value)) pellOptions=options}}
+{{pell-editor value=value onChange=(action (mut value)) pellOptions=options}}
 ```
 
 Available options are documented in [Pell repository](https://github.com/jaredreich/pell)
