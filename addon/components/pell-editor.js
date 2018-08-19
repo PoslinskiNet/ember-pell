@@ -29,8 +29,7 @@ export default Component.extend({
   _options() {
     return Object.assign({}, this.get('pellOptions'), {
       element: this.element,
-      onChange: this.onChange,
-
+      onChange: this.onChange
     });
   },
 
