@@ -1,5 +1,17 @@
 # Change Log
 
+## [v1.4.0](https://github.com/PoslinskiNet/ember-pell/tree/v1.4.0) (2018-08-19)
+[Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.3.4...v1.4.0)
+
+**Implemented enhancements:**
+
+- Fix travis [\#47](https://github.com/PoslinskiNet/ember-pell/pull/47) ([PoslinskiNet](https://github.com/PoslinskiNet))
+
+**Merged pull requests:**
+
+- Allow configurable content classes [\#38](https://github.com/PoslinskiNet/ember-pell/pull/38) ([mnoble01](https://github.com/mnoble01))
+- Update ember-cli to the latest version 🚀 [\#37](https://github.com/PoslinskiNet/ember-pell/pull/37) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+
 ## [v1.3.4](https://github.com/PoslinskiNet/ember-pell/tree/v1.3.4) (2018-06-17)
 [Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.3.3...v1.3.4)
 
