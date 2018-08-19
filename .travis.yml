@@ -31,7 +31,6 @@ jobs:
     - stage: "Tests"
       name: "Tests"
       script:
-        - npm run lint:hbs
         - npm run lint:js
         - npm test
 
@@ -44,7 +43,6 @@ jobs:
     - env: EMBER_TRY_SCENARIO=ember-release
     - env: EMBER_TRY_SCENARIO=ember-beta
     - env: EMBER_TRY_SCENARIO=ember-canary
-    - env: EMBER_TRY_SCENARIO=ember-default-with-jquery
 
 before_install:
   - npm config set spin false
