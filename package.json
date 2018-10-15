@@ -39,7 +39,7 @@
     "ember-cli-eslint": "^4.2.3",
     "ember-cli-htmlbars": "^3.0.0",
     "ember-cli-htmlbars-inline-precompile": "^1.0.2",
-    "ember-cli-inject-live-reload": "^1.4.1",
+    "ember-cli-inject-live-reload": "^2.0.0",
     "ember-cli-template-lint": "^0.7.6",
     "ember-cli-mocha": "^0.15.0",
     "ember-cli-shims": "^1.1.0",
