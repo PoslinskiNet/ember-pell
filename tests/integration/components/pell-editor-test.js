@@ -1,4 +1,3 @@
-import $ from 'jquery';
 import { expect } from 'chai';
 import { describe, it, beforeEach } from 'mocha';
 import { setupComponentTest } from 'ember-mocha';
@@ -16,18 +15,18 @@ describe('Integration | Component | pell editor', function() {
     });
 
     it('render pell richt text editor', function(){
-      expect($('.pell-content').html()).to.equal("This is <strong>my</strong> html");
-      expect($('.pell-content').attr("contenteditable")).to.equal('true');
+      expect(document.querySelector('.pell-content').innerHTML).to.equal("This is <strong>my</strong> html");
+      expect(document.querySelector('.pell-content').getAttribute("contenteditable")).to.equal('true');
     });
 
     it('change value callback propagates properly', function(){
       this.set('value', "new value");
-      expect($('.pell-content').html()).to.equal("new value");
+      expect(document.querySelector('.pell-content').innerHTML).to.equal("new value");
     });
 
     it('mutates state outside if value changed in editor', function(){
-      $('.pell-content').html('Taadaa!');
-      $('.pell-content').trigger('input');
+      document.querySelector('.pell-content').innerHTML = 'Taadaa!';
+      document.querySelector('.pell-content').dispatchEvent(new Event('input'));
       expect(this.get('value')).to.equal('Taadaa!');
     });
   });
@@ -39,18 +38,18 @@ describe('Integration | Component | pell editor', function() {
     });
 
     it('render pell richt text editor', function(){
-      expect($('.pell-content').html()).to.equal("");
-      expect($('.pell-content').attr("contenteditable")).to.equal('true');
+      expect(document.querySelector('.pell-content').innerHTML).to.equal("");
+      expect(document.querySelector('.pell-content').getAttribute("contenteditable")).to.equal('true');
     });
 
     it('change value callback propagates properly', function(){
       this.set('value', "new value");
-      expect($('.pell-content').html()).to.equal("new value");
+      expect(document.querySelector('.pell-content').innerHTML).to.equal("new value");
     });
 
     it('mutates state outside if value changed in editor', function(){
-      $('.pell-content').html('Taadaa!');
-      $('.pell-content').trigger('input');
+      document.querySelector('.pell-content').innerHTML= 'Taadaa!';
+      document.querySelector('.pell-content').dispatchEvent(new Event('input'));
       expect(this.get('value')).to.equal('Taadaa!');
     });
   });
@@ -63,6 +62,6 @@ describe('Integration | Component | pell editor', function() {
       }
     });
     this.render(hbs`{{pell-editor pellOptions=pellOptions value=value}}`);
-    expect($('.custom.class').html()).to.equal('Initial value');
+    expect(document.querySelector('.custom.class').innerHTML).to.equal('Initial value');
   });
 });

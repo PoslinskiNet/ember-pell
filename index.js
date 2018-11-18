@@ -8,7 +8,7 @@ const mergeTrees = require('broccoli-merge-trees');
 module.exports = {
   name: require('./package').name,
 
-  included: function(app) {
+  included(app) {
     this._super.included(app);
 
     app.import('vendor/ember-pell/pell.min.css');
