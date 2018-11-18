@@ -1,5 +1,26 @@
 # Change Log
 
+## [v1.4.1](https://github.com/PoslinskiNet/ember-pell/tree/v1.4.1) (2018-11-18)
+[Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.4.0...v1.4.1)
+
+**Implemented enhancements:**
+
+- Ember 3.5 support [\#60](https://github.com/PoslinskiNet/ember-pell/pull/60) ([PoslinskiNet](https://github.com/PoslinskiNet))
+
+**Closed issues:**
+
+- Prevent HTML tags addition [\#51](https://github.com/PoslinskiNet/ember-pell/issues/51)
+
+**Merged pull requests:**
+
+- Update ember-cli-htmlbars-inline-precompile to the latest version 🚀 [\#57](https://github.com/PoslinskiNet/ember-pell/pull/57) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update ember-load-initializers to the latest version 🚀 [\#56](https://github.com/PoslinskiNet/ember-pell/pull/56) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update eslint-plugin-node to the latest version 🚀 [\#55](https://github.com/PoslinskiNet/ember-pell/pull/55) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update ember-cli-inject-live-reload to the latest version 🚀 [\#54](https://github.com/PoslinskiNet/ember-pell/pull/54) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update ember-cli-babel to the latest version 🚀 [\#50](https://github.com/PoslinskiNet/ember-pell/pull/50) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update ember-source to the latest version 🚀 [\#49](https://github.com/PoslinskiNet/ember-pell/pull/49) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update ember-source to the latest version 🚀 [\#48](https://github.com/PoslinskiNet/ember-pell/pull/48) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+
 ## [v1.4.0](https://github.com/PoslinskiNet/ember-pell/tree/v1.4.0) (2018-08-19)
 [Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.3.4...v1.4.0)
 
