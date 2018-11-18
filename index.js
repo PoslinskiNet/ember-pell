@@ -6,7 +6,7 @@ const Funnel = require('broccoli-funnel');
 const mergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
-  name: 'ember-pell',
+  name: require('./package').name,
 
   included: function(app) {
     this._super.included(app);
