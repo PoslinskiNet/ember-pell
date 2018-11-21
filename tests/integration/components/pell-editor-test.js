@@ -13,13 +13,13 @@ module('Integration | Component | pell editor', function(hooks) {
     });
 
     test('render pell richt text editor', function(assert) {
-      assert.equal(document.querySelector('.pell-content').innerHTML, 'This is <strong>my</strong> html');
-      assert.equal(document.querySelector('.pell-content').getAttribute('contenteditable'), 'true');
+      assert.dom('.pell-content').innerHTML, 'This is <strong>my</strong> html';
+      assert.dom('.pell-content').hasAttribute('contenteditable', 'true');
     });
 
     test('change value callback propagates properly', function(assert) {
       this.set('value', 'new value');
-      assert.equal(document.querySelector('.pell-content').innerHTML, 'new value');
+      assert.dom('.pell-content').hasText('new value');
     });
 
     test('mutates state outside if value changed in editor', function(assert) {
@@ -36,13 +36,13 @@ module('Integration | Component | pell editor', function(hooks) {
     });
 
     test('render pell richt text editor', function(assert) {
-      assert.equal(document.querySelector('.pell-content').innerHTML, '');
-      assert.equal(document.querySelector('.pell-content').getAttribute('contenteditable'), 'true');
+      assert.dom('.pell-content').hasText('');
+      assert.dom('.pell-content').hasAttribute('contenteditable', 'true');
     });
 
     test('change value callback propagates properly', function(assert) {
       this.set('value', 'new value');
-      assert.equal(document.querySelector('.pell-content').innerHTML, 'new value');
+      assert.dom('.pell-content').hasText('new value');
     });
 
     test('mutates state outside if value changed in editor', function(assert) {
@@ -61,6 +61,6 @@ module('Integration | Component | pell editor', function(hooks) {
     });
     await render(hbs`{{pell-editor pellOptions=pellOptions value=value}}`);
 
-    assert.equal(document.querySelector('.custom.class').innerHTML, 'Initial value');
+    assert.dom('.custom.class').hasText('Initial value');
   });
 });
