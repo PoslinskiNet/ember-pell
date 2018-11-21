@@ -1,67 +1,66 @@
-import { expect } from 'chai';
-import { describe, it, beforeEach } from 'mocha';
-import { setupComponentTest } from 'ember-mocha';
+import { module, test } from 'qunit'
+import { setupRenderingTest } from 'ember-qunit';
+import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
-describe('Integration | Component | pell editor', function() {
-  setupComponentTest('pell-editor', {
-    integration: true
-  });
+module('Integration | Component | pell editor', function(hooks) {
+  setupRenderingTest(hooks);
 
-  describe('when value is provided', function() {
-    beforeEach(function(){
-      this.set('value', "This is <strong>my</strong> html");
-      this.render(hbs`{{pell-editor value=value onChange=(action (mut value))}}`);
+  module('when value is provided', function(hooks) {
+    hooks.beforeEach(async function() {
+      this.set('value', 'This is <strong>my</strong> html');
+      await render(hbs`{{pell-editor value=value onChange=(action (mut value))}}`);
     });
 
-    it('render pell richt text editor', function(){
-      expect(document.querySelector('.pell-content').innerHTML).to.equal("This is <strong>my</strong> html");
-      expect(document.querySelector('.pell-content').getAttribute("contenteditable")).to.equal('true');
+    test('render pell richt text editor', function(assert) {
+      assert.equal(document.querySelector('.pell-content').innerHTML, 'This is <strong>my</strong> html');
+      assert.equal(document.querySelector('.pell-content').getAttribute('contenteditable'), 'true');
     });
 
-    it('change value callback propagates properly', function(){
-      this.set('value', "new value");
-      expect(document.querySelector('.pell-content').innerHTML).to.equal("new value");
+    test('change value callback propagates properly', function(assert) {
+      this.set('value', 'new value');
+      assert.equal(document.querySelector('.pell-content').innerHTML, 'new value');
     });
 
-    it('mutates state outside if value changed in editor', function(){
+    test('mutates state outside if value changed in editor', function(assert) {
       document.querySelector('.pell-content').innerHTML = 'Taadaa!';
       document.querySelector('.pell-content').dispatchEvent(new Event('input'));
-      expect(this.get('value')).to.equal('Taadaa!');
+      assert.equal(this.value, 'Taadaa!');
     });
   });
 
-  describe('when value is not provided', function() {
-    beforeEach(function(){
+  module('when value is not provided', function(hooks) {
+    hooks.beforeEach(async function() {
       this.set('value', undefined);
-      this.render(hbs`{{pell-editor value=value onChange=(action (mut value))}}`);
+      await render(hbs`{{pell-editor value=value onChange=(action (mut value))}}`);
     });
 
-    it('render pell richt text editor', function(){
-      expect(document.querySelector('.pell-content').innerHTML).to.equal("");
-      expect(document.querySelector('.pell-content').getAttribute("contenteditable")).to.equal('true');
+    test('render pell richt text editor', function(assert) {
+      assert.equal(document.querySelector('.pell-content').innerHTML, '');
+      assert.equal(document.querySelector('.pell-content').getAttribute('contenteditable'), 'true');
     });
 
-    it('change value callback propagates properly', function(){
-      this.set('value', "new value");
-      expect(document.querySelector('.pell-content').innerHTML).to.equal("new value");
+    test('change value callback propagates properly', function(assert) {
+      this.set('value', 'new value');
+      assert.equal(document.querySelector('.pell-content').innerHTML, 'new value');
     });
 
-    it('mutates state outside if value changed in editor', function(){
+    test('mutates state outside if value changed in editor', function(assert) {
       document.querySelector('.pell-content').innerHTML= 'Taadaa!';
       document.querySelector('.pell-content').dispatchEvent(new Event('input'));
-      expect(this.get('value')).to.equal('Taadaa!');
+      assert.equal(this.value, 'Taadaa!');
     });
   });
 
-  it('respects custom content classes', function() {
+  test('respects custom content classes', async function(assert) {
     this.set('value', 'Initial value');
     this.set('pellOptions', {
       classes: {
         content: 'custom class',
       }
     });
-    this.render(hbs`{{pell-editor pellOptions=pellOptions value=value}}`);
-    expect(document.querySelector('.custom.class').innerHTML).to.equal('Initial value');
+    await render(hbs`{{pell-editor pellOptions=pellOptions value=value}}`);
+
+    assert.equal(document.querySelector('.custom.class').innerHTML, 'Initial value');
   });
 });
