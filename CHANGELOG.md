@@ -1,5 +1,18 @@
 # Change Log
 
+## [v1.4.2](https://github.com/PoslinskiNet/ember-pell/tree/v1.4.2) (2018-12-28)
+[Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.4.1...v1.4.2)
+
+**Implemented enhancements:**
+
+- Add qunit dom [\#63](https://github.com/PoslinskiNet/ember-pell/pull/63) ([Rxbsxn](https://github.com/Rxbsxn))
+- Migrate from mocha to qunit [\#62](https://github.com/PoslinskiNet/ember-pell/pull/62) ([czikarito](https://github.com/czikarito))
+
+**Merged pull requests:**
+
+- 3.6 upgrade [\#69](https://github.com/PoslinskiNet/ember-pell/pull/69) ([PoslinskiNet](https://github.com/PoslinskiNet))
+- Turn off integration with JQuery [\#64](https://github.com/PoslinskiNet/ember-pell/pull/64) ([Rxbsxn](https://github.com/Rxbsxn))
+
 ## [v1.4.1](https://github.com/PoslinskiNet/ember-pell/tree/v1.4.1) (2018-11-18)
 [Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.4.0...v1.4.1)
 
