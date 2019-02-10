@@ -8,7 +8,16 @@
 [![NPM package info for ember-pell](https://img.shields.io/npm/dm/ember-pell.svg)](http://npmjs.com/package/ember-pell)
 [![License info](https://img.shields.io/npm/l/ember-pell.svg)](http://npmjs.com/package/ember-pell)
 
-# Ember-pell
+
+Compatibility
+------------------------------------------------------------------------------
+
+* Ember.js v2.18 or above
+* Ember CLI v2.13 or above
+
+
+Installation
+------------------------------------------------------------------------------
 
 An Ember Component that uses under the hood the great Pell micro 1KB WYSIWYG editor (https://github.com/jaredreich/pell) that doesn't require jQuery.
 
