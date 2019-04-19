@@ -57,12 +57,16 @@ export default Ember.Controller.extend({
 
 Available options are documented in [Pell repository](https://github.com/jaredreich/pell)
 
-## LICENSE
+License
+------------------------------------------------------------------------------
 
 See the LICENSE file included in this repository.
 
-<!-- Links -->
-[pell]: https://github.com/jaredreich/pell
+Contributing
+------------------------------------------------------------------------------
+
+See the [Contributing](CONTRIBUTING.md) guide for details.
+
 
 
 ## Code of Conduct
