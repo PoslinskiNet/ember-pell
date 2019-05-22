@@ -1,5 +1,16 @@
 # Change Log
 
+## [v1.4.5](https://github.com/PoslinskiNet/ember-pell/tree/v1.4.5) (2019-05-22)
+[Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.4.4...v1.4.5)
+
+**Implemented enhancements:**
+
+- Ember 3.10 [\#81](https://github.com/PoslinskiNet/ember-pell/pull/81) ([PoslinskiNet](https://github.com/PoslinskiNet))
+
+**Merged pull requests:**
+
+- Update ember-source to the latest version 🚀 [\#78](https://github.com/PoslinskiNet/ember-pell/pull/78) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+
 ## [v1.4.4](https://github.com/PoslinskiNet/ember-pell/tree/v1.4.4) (2019-04-19)
 [Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.4.3.0...v1.4.4)
 
