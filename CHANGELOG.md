@@ -1,7 +1,20 @@
 # Change Log
 
-## [v1.4.3](https://github.com/PoslinskiNet/ember-pell/tree/v1.4.3) (2019-02-10)
-[Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.4.2...v1.4.3)
+## [v1.4.4](https://github.com/PoslinskiNet/ember-pell/tree/v1.4.4) (2019-04-19)
+[Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.4.3.0...v1.4.4)
+
+**Implemented enhancements:**
+
+- Ember 3.9 upgrade [\#76](https://github.com/PoslinskiNet/ember-pell/pull/76) ([PoslinskiNet](https://github.com/PoslinskiNet))
+
+**Merged pull requests:**
+
+- Update ember-cli-uglify to the latest version 🚀 [\#75](https://github.com/PoslinskiNet/ember-pell/pull/75) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update ember-cli to the latest version 🚀 [\#74](https://github.com/PoslinskiNet/ember-pell/pull/74) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+- Update ember-source to the latest version 🚀 [\#73](https://github.com/PoslinskiNet/ember-pell/pull/73) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+
+## [v1.4.3.0](https://github.com/PoslinskiNet/ember-pell/tree/v1.4.3.0) (2019-02-10)
+[Full Changelog](https://github.com/PoslinskiNet/ember-pell/compare/v1.4.2...v1.4.3.0)
 
 **Implemented enhancements:**
 
