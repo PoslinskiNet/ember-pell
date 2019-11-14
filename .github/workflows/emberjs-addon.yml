@@ -6,6 +6,8 @@ jobs:
   build:
     name: Ember Testing addon
     runs-on: ubuntu-latest
+    env:
+      CI: true
 
     steps:
     - name: Set Node.js 8.x
@@ -13,16 +15,11 @@ jobs:
       with:
         version: 8.x
 
-    - name: Lint handlebars
-      run:
+    - name: Install, lint:hbs, lint:js, tests
+      run: |
+        npm ci
         npm run lint:hbs
-      
-    - name: Lint handlebars
-      run:
         npm run lint:js
-        
-    - name: Tests
-      run:
         npm test
         
   additional:
