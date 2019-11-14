@@ -1,4 +1,4 @@
-name: Node CI
+name: Ember Addon
 
 on: [push]
 
@@ -6,10 +6,11 @@ jobs:
   build:
     name: Ember Testing addon
     runs-on: ubuntu-latest
-    env:
-      CI: true
 
     steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
     - name: Set Node.js 8.x
       uses: actions/setup-node@master
       with:
@@ -17,13 +18,13 @@ jobs:
 
     - name: Install, lint:hbs, lint:js, tests
       run: |
-        npm ci
+        npm install
         npm run lint:hbs
         npm run lint:js
         npm test
         
   additional:
-    name: Ember additional 
+    name: Ember additional ${{matrix.ember-release}}
     runs-on: ubuntu-latest
     
     strategy:
@@ -37,22 +38,19 @@ jobs:
           - ember-default-with-jquery
     
     steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
     - name: Set Node.js 8.x
       uses: actions/setup-node@master
       with:
         version: 8.x
-          
-    - name: Lint handlebars
+  
+    - name: Install, lint:hbs, lint:js, tests
       continue-on-error: true
-      run:
-        npm run lint:hbs
-      
-    - name: Lint handlebars
-      continue-on-error: true
-      run:
-        npm run lint:js
-        
-    - name: Tests with ${{matrix.ember-release}}
-      continue-on-error: true
-      run:
+      run: |
+        npm install
         node_modules/.bin/ember try:one ${{matrix.ember-release}}
+        npm run lint:hbs
+        npm run lint:js
+        npm test
