@@ -1,0 +1,61 @@
+name: Node CI
+
+on: [push]
+
+jobs:
+  build:
+    name: Ember Testing addon
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Set Node.js 8.x
+      uses: actions/setup-node@master
+      with:
+        version: 8.x
+
+    - name: Lint handlebars
+      run:
+        npm run lint:hbs
+      
+    - name: Lint handlebars
+      run:
+        npm run lint:js
+        
+    - name: Tests ${{}}
+      run:
+        npm test
+        
+  additional:
+    name: Ember additional 
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        ember-release: 
+          - ember-lts-2.18
+          - ember-lts-3.4
+          - ember-release
+          - ember-beta
+          - ember-canary
+          - ember-default-with-jquery
+    
+    steps:
+    - name: Set Node.js 8.x
+      uses: actions/setup-node@master
+      with:
+        version: 8.x
+          
+    - name: Lint handlebars
+      continue-on-error: true
+      run:
+        npm run lint:hbs
+      
+    - name: Lint handlebars
+      continue-on-error: true
+      run:
+        npm run lint:js
+        
+    - name: Tests with ${{matrix.ember-release}}
+      continue-on-error: true
+      run:
+        node_modules/.bin/ember try:one ${{matrix.ember-release}}
