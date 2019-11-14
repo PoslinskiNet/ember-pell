@@ -21,7 +21,7 @@ jobs:
       run:
         npm run lint:js
         
-    - name: Tests ${{}}
+    - name: Tests
       run:
         npm test
         
