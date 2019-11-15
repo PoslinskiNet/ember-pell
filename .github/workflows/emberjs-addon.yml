@@ -51,6 +51,3 @@ jobs:
       run: |
         npm install
         node_modules/.bin/ember try:one ${{matrix.ember-release}}
-        npm run lint:hbs
-        npm run lint:js
-        npm test
