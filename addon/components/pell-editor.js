@@ -3,12 +3,13 @@ import { observer } from '@ember/object';
 import pell from 'ember-pell/pell';
 
 export default Component.extend({
+  pell: null,
   pellOptions: null,
 
   onChange(/*html*/) {},
 
   valueObserver: observer('value', function() {
-    if (this.get('pell')) {
+    if (this.pell) {
       this._setValue();
     }
   }),
@@ -27,16 +28,16 @@ export default Component.extend({
   },
 
   _options() {
-    return Object.assign({}, this.get('pellOptions'), {
+    return Object.assign({}, this.pellOptions, {
       element: this.element,
       onChange: this.onChange
     });
   },
 
   _setValue() {
-    const val = this.get('value');
-    if (this.get('pell').innerHTML !== val && typeof val !== 'undefined') {
-      this.get('pell').innerHTML = val;
+    const val = this.value;
+    if (this.pell.innerHTML !== val && typeof val !== 'undefined') {
+      this.pell.innerHTML = val;
     }
   }
 });
