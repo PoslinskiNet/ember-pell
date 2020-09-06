@@ -11,10 +11,10 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
 
-    - name: Set Node.js 8.x
+    - name: Set Node.js 10.x
       uses: actions/setup-node@master
       with:
-        node-version: 8.x
+        node-version: 10.x
 
     - name: Install, lint:hbs, lint:js, tests
       run: |
@@ -41,10 +41,10 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
 
-    - name: Set Node.js 8.x
+    - name: Set Node.js 10.x
       uses: actions/setup-node@master
       with:
-        node-version: 8.x
+        node-version: 10.x
   
     - name: Install, lint:hbs, lint:js, tests
       continue-on-error: true

@@ -1,5 +1,7 @@
-{{pell-editor value=value onChange=(action (mut value))}}
+<pellEditor 
+  value={{this.value}} 
+  onChange={{fn this.onChange}} />
 
 <hr>
 
-{{value}}
+{{this.value}}
