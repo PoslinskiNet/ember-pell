@@ -50,6 +50,13 @@ module('Integration | Component | pell editor', function(hooks) {
       document.querySelector('.pell-content').dispatchEvent(new Event('input'));
       assert.equal(this.value, 'Taadaa!');
     });
+
+    test('mutates state inside if value is set to undefined', async function(assert) {
+      this.set('value', 'new value');
+      assert.dom('.pell-content').hasText('new value');
+      this.set('value', undefined);
+      assert.dom('.pell-content').hasText('');
+    });
   });
 
   test('respects custom content classes', async function(assert) {
