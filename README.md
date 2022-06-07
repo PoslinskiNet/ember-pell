@@ -34,7 +34,9 @@ https://ember-twiddle.com/3b21c63730594b39d2b9cbfa8f963803
 
 ## Installation
 
-`ember install ember-pell`
+```
+ember install ember-pell
+```
 
 ## Usage
 
@@ -43,17 +45,25 @@ You can declare value variable in your controller or parent component:
 
 ```javascript
 // app/controllers/task.js
-import Ember from 'ember';
 
-export default Ember.Controller.extend({
-  value: '<h1>Some html</h1>',
-  options: {} // optional param
-});
+import Controller from '@ember/controller';
+
+export default class TaskController extends Controller {
+  value = '<h1>Some html</h1>';
+  options = {}; // optional param
+}
 ```
-#### 2. Use `pell-editor` component
+
+#### 2. Use `<PellEditor />` component
 
 ```hbs
-{{pell-editor value=value onChange=(action (mut value)) pellOptions=options}}
+{{! app/templates/task.hbs }}
+
+<PellEditor
+  @value={{this.value}}
+  @onChange={{fn (mut this.value)}}
+  @pellOptions={{this.options}}
+/>
 ```
 
 Available options are documented in [Pell repository](https://github.com/jaredreich/pell)
